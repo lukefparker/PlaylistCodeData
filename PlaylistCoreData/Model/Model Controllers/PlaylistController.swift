@@ -11,7 +11,7 @@ import CoreData
 
 class PlaylistController {
     // MARK Singleton
-    
+    static let sharedInstance = PlaylistController()
     //MARK CRUD
     var playlists: [Playlist] {
     let fetchRequest: NSFetchRequest<Playlist> = Playlist.fetchRequest()
